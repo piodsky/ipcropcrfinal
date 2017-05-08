@@ -3,21 +3,23 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+        <div class="col-md-12 col-md-offset-0">
             <div class="panel panel-default">
-                <div class="panel-heading"><center>HOME</center></div>
+                <div class="panel-heading"><center>Departments</center></div>
 
                 <div class="panel-body">
-                    You are logged in!
-                    
+               
 
                     Pick choices:
                     <br>
                 <br>
-                     <a class="btn btn-lg btn-primary btn-block" href="/department" role="button">
-                Individual Performance Commitment and Review Form (IPCR)
-                </a>
-
+             <div class="btn-group btn-group-justified">
+  <a href="/ipcr" class="btn btn-success">College of Arts and Sciences</a>
+  <a href="#" class="btn btn-warning">College of Business</a>
+  <a href="#" class="btn btn-primary">College of Education</a>
+  <a href="#" class="btn btn-danger">CSDT</a>
+  <a href="#" class="btn btn-default">College of Nursing</a>
+</div>
                 <br>
                 <br>
               <!--    <a class="btn btn-lg btn-primary btn-block" href="/home" role="button">
