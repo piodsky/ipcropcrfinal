@@ -24,21 +24,21 @@
                 <div class="list-group notes-group">
 
                     <!--note1 -->
-
-                    @foreach($notes as $note)
+                <table style="width: 90%;border-collapse: separate;border-spacing: 5px;">
+                  
                     <div class="card card-block">
-                        <a href="{{route('notes.show',$note->id)}}">
-                            <h4 class="card-title">
-                                {{$note->title}}
-                            </h4>
-                        </a>
-                        <table style="width: 90%;border-collapse: separate;border-spacing: 5px;">
-                            <tr>
+                    <tr>
                                 <th>
-                                    Input
+                                    MFI
                                 </th>
                                 <th>
-                                    % Distribution
+                                    Success Indicator
+                                </th>
+                                <th>
+                                    Actual Accomplishment
+                                </th>
+                                <th>
+                                    Distribution %
                                 </th>
                                 <th>
                                     Q1
@@ -57,8 +57,11 @@
                                 </th>
                                 
                             </tr>
+                      @foreach($notes as $note)                     
                             <tr>
-                                <td>{{$note->body}}</td>
+                                <td>{{$note->MFI}}</td>
+                                <td>{{$note->successIndicator}}</td>
+                                <td>{{$note->actualaccomplishments}}</td>
                                 <td>{{$note->distribution}}</td>
                                 <td>
                                     {{$note->Q1}}

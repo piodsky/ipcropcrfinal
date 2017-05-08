@@ -18,16 +18,58 @@
 						{{method_field('PUT')}}
 						<div class="form-group">
 							<label for="title"> 
-								Note Title 
+								MFI
 							</label>
-							<input class="form-control" type="text" name="title" value="{{$note->title}}">
+							<input class="form-control" type="text" name="MFI" value="{{$note->MFI}}" onClick="this.select();">
 						</div>
 
 						<div class="form-group">
 							<label for="body">
-								Note Body
+								Success Indicator
 							</label>
-							<input class="form-control" type="text" name="body" value="{{$note->body}}">
+							<input class="form-control" type="text" name="successIndicator" value="{{$note->successIndicator}}" onClick="this.select();">
+						</div>
+
+						<div class="form-group">
+							<label for="body">
+								Actual Accomplishment
+							</label>
+							<input class="form-control" type="text" name="actualaccomplishments" value="{{$note->actualaccomplishments}}" onClick="this.select();">
+						</div>
+
+						<div class="form-group">
+							<label for="body">
+								Distribution
+							</label>
+							<input class="form-control" type="number" name="distribution" value="{{$note->distribution}}" onClick="this.select();">
+						</div>
+
+						<div class="form-group">
+							<label for="body">
+								Q1
+							</label>
+							<select style="width:43px; height: 36px; border-radius: 4px;" name="T3" id="T3" onchange="calc('Q1','E2','T3','distro','A4','Ave')" value="{{$note->Q1}}">
+              			<option value="0">0</option>
+                      <option value="1">1</option> 
+                      <option value="2">2</option>  
+                      <option value="3">3</option>  
+                      <option value="4">4</option>  
+                      <option value="5">5</option>   
+                    </select>
+						</div>							
+						
+						<div class="form-group">
+							<label for="body">
+								E2
+							</label>
+							<input class="form-control" type="number" name="E2" value="{{$note->E2}}" onClick="this.select();">
+						</div>
+
+						<div class="form-group">
+							<label for="body">
+								T3
+							</label>
+							<input class="form-control" type="number" name="T3" value="{{$note->T3}}" onClick="this.select();">
 						</div>
 
 						<input class="btn btn-primary" type="submit" value="Done"></input>
