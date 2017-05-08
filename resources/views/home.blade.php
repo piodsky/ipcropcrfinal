@@ -20,10 +20,10 @@
 
                 <br>
                 <br>
-                 <a class="btn btn-lg btn-primary btn-block" href="/home" role="button">
-                 Office Performance Commitment and Review Form (OPCR)
-                </a>
-                </div>
+              <!--    <a class="btn btn-lg btn-primary btn-block" href="/home" role="button">
+              Office Performance Commitment and Review Form (OPCR)
+                              </a>
+                              </div> -->
             </div>
         </div>
     </div>
