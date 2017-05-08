@@ -14,11 +14,11 @@
                     <br>
                 <br>
              <div class="btn-group btn-group-justified">
-  <a href="/ipcr" class="btn btn-primary">College of Arts and Sciences</a>
-  <a href="#" class="btn btn-primary">College of Business</a>
+  <a href="/ipcr" class="btn btn-success">College of Arts and Sciences</a>
+  <a href="#" class="btn btn-warning">College of Business</a>
   <a href="#" class="btn btn-primary">College of Education</a>
-  <a href="#" class="btn btn-primary">CSDT</a>
-  <a href="#" class="btn btn-primary">College of Nursing</a>
+  <a href="#" class="btn btn-danger">CSDT</a>
+  <a href="#" class="btn btn-default">College of Nursing</a>
 </div>
                 <br>
                 <br>
