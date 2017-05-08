@@ -15,6 +15,23 @@
 
 <style>
 
+table {
+	
+}
+
+table td {
+
+border-right: 1px solid #000;
+}
+
+table td:first-child {
+border-left: none;
+}
+
+table td:last-child {
+border-right: none;
+}
+
 
 .cas {
 	float:right;
@@ -118,7 +135,7 @@
 <body>	
 
 
-		 <table style="width: 100%;border-collapse: separate;border-spacing: 2px ; border: 1px solid black;">
+		 <table style="width: 100%;border-collapse: separate;border-spacing: 8px ; border: 1px solid black;">
 
 				<tr>
                   <th style="width: 150px; ">Major Final Output</th>
@@ -132,6 +149,13 @@
                   <th>Average Score</th>
                   <th>Remarks</th>
                 </tr>																
+
+
+
+
+
+
+
 
 
 

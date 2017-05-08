@@ -8,7 +8,9 @@
         <div class="panel-heading"><center>INDIVIDUAL PERFORMANCE COMMITMENT AND REVIEW (IPCR)</center></div>
 
           <div class="panel-body">
-
+           <a href="/getPDF" class="btn btn-danger">Export in PDF</a>
+            <a href="/sample" class="btn btn-success">Print Preview</a>
+       
             <table style="width: 100%;border-collapse: separate;border-spacing: 8px;">
 
               <form action="{{route('notes.store')}}" method="POST">
