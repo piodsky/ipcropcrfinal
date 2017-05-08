@@ -22,6 +22,9 @@ Route::group(['middleware'=>'auth'], function(){
 			Route::get('/home', function () {
 			    return view('home');
 			});
+			Route::get('/department', function () {
+			    return view('department');
+			});
 
 
 	/*	Route::get('/ipcr', 'ipcrController@index');
