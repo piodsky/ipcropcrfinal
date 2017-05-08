@@ -1,6 +1,6 @@
- <!DOCTYPE html>
-<html>
-<head>
+@extends('layouts.app')
+
+@section('content')
 <h2 style="color:blue;"> <center>BUKIDNON  STATE  </center> </h2>
 <h2 class="uni"  style="color:red;"> <center>U N  I V  E R  S I  T Y</center> </h2>
 <h4 class="uni1" style="color:gray;"> <center>Malaybalay City, Bukidnon, 8700,</center> </h4>
@@ -36,13 +36,15 @@ border-right: none;
 .cas {
 	float:right;
 	margin-right:15px;
-	margin-top:-140px;
+	margin-top:-120px;
+	padding-bottom: 10px;
 }
 
 .bsu{
 	float:left;
 	margin-left:15px;
-	margin-top:-140px;
+	margin-top:-120px;
+	padding-bottom: 10px;
 }
 
 .uni {
@@ -52,7 +54,7 @@ border-right: none;
 	margin-top:-15px;
 }
 .uni3{
-	margin-top:-20px;
+	margin-top:-10px;
 	text-decoration: underline;
 }
 .ip{
@@ -153,6 +155,17 @@ border-right: none;
 
 
 
+	<div class="row">
+		
+		<h3 class="display-3">
+			{{$note->title}}
+
+			</h3>
+
+			<p>
+			{{$note->body}}
+			</p>
+	</div>
 
 
 
@@ -162,6 +175,5 @@ border-right: none;
 
 
 </body>
-</html>
-</body>
-</html>
+
+@endsection

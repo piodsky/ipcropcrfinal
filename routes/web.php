@@ -25,8 +25,8 @@ Route::group(['middleware'=>'auth'], function(){
 			Route::get('/department', function () {
 			    return view('department');
 			});
-			Route::get('/sample', function () {
-			    return view('sample');
+			Route::get('/preview', function () {
+			    return view('preview');
 			});
 
 			
@@ -85,3 +85,8 @@ Route::group(['prefix' => 'admin'], function () {
 // });
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

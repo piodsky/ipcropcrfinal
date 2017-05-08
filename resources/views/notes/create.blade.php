@@ -9,7 +9,7 @@
 
           <div class="panel-body">
            <a href="/getPDF" class="btn btn-danger">Export in PDF</a>
-            <a href="/sample" class="btn btn-success">Print Preview</a>
+            <a href="/preview" class="btn btn-success">Print Preview</a>
        
             <table style="width: 100%;border-collapse: separate;border-spacing: 8px;">
 
