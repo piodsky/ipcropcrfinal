@@ -1,6 +1,6 @@
- <!DOCTYPE html>
-<html>
-<head>
+@extends('layouts.app')
+
+@section('content')
 <h2 style="color:blue;"> <center>BUKIDNON  STATE  </center> </h2>
 <h2 class="uni"  style="color:red;"> <center>U N  I V  E R  S I  T Y</center> </h2>
 <h4 class="uni1" style="color:gray;"> <center>Malaybalay City, Bukidnon, 8700,</center> </h4>
@@ -15,17 +15,36 @@
 
 <style>
 
+table {
+	
+}
+
+table td {
+
+border-right: 1px solid #000;
+}
+
+table td:first-child {
+border-left: none;
+}
+
+table td:last-child {
+border-right: none;
+}
+
 
 .cas {
 	float:right;
 	margin-right:15px;
-	margin-top:-140px;
+	margin-top:-120px;
+	padding-bottom: 10px;
 }
 
 .bsu{
 	float:left;
 	margin-left:15px;
-	margin-top:-140px;
+	margin-top:-120px;
+	padding-bottom: 10px;
 }
 
 .uni {
@@ -35,7 +54,7 @@
 	margin-top:-15px;
 }
 .uni3{
-	margin-top:-20px;
+	margin-top:-10px;
 	text-decoration: underline;
 }
 .ip{
@@ -118,7 +137,7 @@
 <body>	
 
 
-		 <table style="width: 100%;border-collapse: separate;border-spacing: 2px ; border: 1px solid black;">
+		 <table style="width: 100%;border-collapse: separate;border-spacing: 8px ; border: 1px solid black;">
 
 				<tr>
                   <th style="width: 150px; ">Major Final Output</th>
@@ -136,8 +155,25 @@
 
 
 
+	<div class="row">
+		
+		<h3 class="display-3">
+			{{$note->title}}
+
+			</h3>
+
+			<p>
+			{{$note->body}}
+			</p>
+	</div>
+
+
+
+
+
+
+
 
 </body>
-</html>
-</body>
-</html>
+
+@endsection
