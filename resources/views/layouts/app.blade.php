@@ -10,6 +10,7 @@
 
     <title>{{ config('app.name', 'IPCR OPCR') }}</title>
 
+
     <!-- Styles -->
     <link href="/css/app.css" rel="stylesheet">
 
@@ -19,6 +20,7 @@
             'csrfToken' => csrf_token(),
         ]); ?>
     </script>
+    <script src="/js/app.js" type="text/javascript"></script>
 </head>
 <body>
     <div id="app">

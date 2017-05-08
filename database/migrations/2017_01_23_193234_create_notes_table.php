@@ -16,12 +16,16 @@ class CreateNotesTable extends Migration
         Schema::create('notes', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('ipcr_id');
-            $table->string('title');
-            $table->text('body');
+            $table->string('MFI');
+            $table->string('successIndicator');
+            $table->string('actualaccomplishments');
             $table->string('distribution');
-            $table->text('Q1');
-            $table->text('E2');
-            $table->text('T3');
+            $table->integer('Q1');
+            $table->integer('E2');
+            $table->integer('T3');
+            $table->float('A4');
+            $table->float('Ave');
+            $table->string('Remarks');
             $table->timestamps();
         });
     }
